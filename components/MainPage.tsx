@@ -1,12 +1,8 @@
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import MainPage from "@/components/MainPage"
 
-export default function Home() {
-  return (
-   <div className="flex flex-col">
-    <Navbar/>
-     <div className="flex bg-[#f4ede3] justify-between h-screen">
+const MainPage=()=>{
+    return (
+        <div className="flex bg-[#f4ede3] justify-between">
         <div className="flex flex-col my-auto ml-6">
               <h1 className="text-black text-6xl font-semibold font-sans ">Slack is where</h1>
               <h1 className="text-black text-6xl font-semibold font-sans pt-1">work happens</h1>
@@ -18,9 +14,11 @@ export default function Home() {
                     <button className="text-violet-800 bg-[#f4ede3] border-2 p-5 text-xs rounded-md ml-2 border-violet-800 font-semibold w-44">CONTACT SALES</button>
               </div>  
         </div>
-        <Image src="/soloo.png" alt="image" width={1200} height={300}></Image>
-        
-    N</div>
-   </div>
-  );
+        <div className="flex w-2/3 h-screen">
+          <Image src="/soloo.png" alt="image" fill></Image>
+        </div>
+    </div>
+    )
 }
+
+export default MainPage;
