@@ -5,7 +5,6 @@ import MainPage from "@/components/MainPage"
 export default function Home() {
   return (
    <div className="flex flex-col">
-    <Navbar/>
      <div className="flex bg-[#f4ede3] justify-between h-screen">
         <div className="flex flex-col my-auto ml-6">
               <h1 className="text-black text-6xl font-semibold font-sans ">Slack is where</h1>
